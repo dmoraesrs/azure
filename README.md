@@ -64,5 +64,3 @@ Define FQDN para criaçaõ do reverso
 * az account list --output table
 
 * o dado necessário será o **SubscriptionId** ele terá o formato: **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**
-=======
->>>>>>> e0e172cb4a862f826c0bfcfabde98658c64055db
