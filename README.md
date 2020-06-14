@@ -49,3 +49,20 @@ Define FQDN para criaçaõ do reverso
 
 * $fqdn=".eastus2.cloudapp.azure.com."
 
+<<<<<<< HEAD
+
+
+### Para pegar os dados de sua subcrição deve se usar o comando abaixo:
+### Para a execução do processo será necessário a instalação do az-client: 
+
+* **https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest**
+
+* Após sua instalação deverá ser realizado o login com o comando:
+
+* az login
+
+* az account list --output table
+
+* o dado necessário será o **SubscriptionId** ele terá o formato: **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**
+=======
+>>>>>>> e0e172cb4a862f826c0bfcfabde98658c64055db
