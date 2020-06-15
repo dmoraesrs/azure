@@ -26,6 +26,6 @@ while($val -ne $vms)
        $val++
         az vm create --name "$vmname$val" --resource-group $rg --image $img --admin-username azureuser --admin-password "***********" --public-ip-address-allocation static --subscription "**********************" --public-ip-address-dns-name "$vmname$val" --size Standard_B1ms --nsg $vmname
         az network nsg rule create -g $rg --nsg-name $vmname  -n $vmname --priority 1001 --source-address-prefixes '*' --source-port-ranges '*' --destination-address-prefixes '*' --destination-port-ranges 80 443 25 22 --access Allow --protocol Tcp --description "Allow 25, 443, 80, 22"
-        az network public-ip update --resource-group $rg --name $vmname$val$ip --reverse-fqdn $aliasfqdn$val$fqdn
+        #az network public-ip update --resource-group $rg --name $vmname$val$ip --reverse-fqdn $aliasfqdn$val$fqdn
         az vm list --show-details --output table -g $rg
      }
