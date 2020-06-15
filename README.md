@@ -64,3 +64,6 @@ Define FQDN para criaçaõ do reverso
 * az account list --output table
 
 * o dado necessário será o **SubscriptionId** ele terá o formato: **xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx**
+
+Comando para criar o Reverso
+#az network public-ip update --resource-group LAB01 --name vm01254124701PublicIP --reverse-fqdn mail01.diegofmoraes.com.br
